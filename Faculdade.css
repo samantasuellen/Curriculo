@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+/*estilo de tabela*/
+
+table#tabelaspec {
+	border:1px solid black;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#tabelaspec td {
+	border: 1px solid dimgrey;
+	padding: 10px;
+	text align: center;
+	vertical-align: top;
+}
+table#tabelaspec td.ce {
+	border:1px solid dimgrey;
+	color: white;
+	background-color: grey;
+	vertical-align: top;
+	font-weight: bold;
+}
+table#tabelaspec td.cd {
+	background-color: lightgrey;
+}
+table#tabelaspec caption {
+	color: ;
+	front-size:  8pt;
+	font-size: top;
+	font-weight:  bold;
+}
+table#tabelaspec caption span {
+	display:  block;
+	float:  right;
+	color:  white;
+	font-size:  10pt;
+	margin-top: 10px;
+}
+
+/*HEADER*/
+article#noticia-principal-faculdade h2 {
+	font-size: 12pt;
+	color:  white;
+	background-color: lightgrey;
+	padding: 5px 0px 5px 10px;
+	margin:  5px 0px 10px 0px;
+}
+header#cabeçalho-artigo-faculdade h1 {
+	font-family: "fontelogo", sans-serif;
+	font-size: 20pt;
+	color:  grey;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+header#cabeçalho-artigo-faculdade h2 {
+	font-size: 16pt;
+	color:  grey;
+	background-color: white;
+	margin: 50px;
+}
+header#cabeçalho-artigo-faculdade h4 {
+	font-family: "fontelogo", sans-serif;
+	font-size: 12pt;
+	color:  grey;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+header#cabeçalho-artigo-faculdade h3 {
+	font-size: 12px;
+	color:  grey;
+}
+.header-container-Faculdade {
+	height: 270vh;
+	width: 100vw;
+	background-color: aliceblue;
+	background-image: /*url('./_imagens/perfil2.png')*/;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 50px 50px ;
+	position: relative;	
+
+}
+
+/*IMAGEM*/
+
+
+figure.foto-legenda-html5 img {
+	width: 20%;
+	height: 20%;
+}
+
+figure.foto-legenda-mysql img {
+	width: 20%;
+	height: 20%;
+}
+
+figure.curso {
+	position:  relative;
+	border: 35px solid white;
+	box-shadow: 1px 1px 4px black;
+	width: 120px;
+	height: 40px;
+}
+
+figure.curso img {
+	width: 50%;
+	height: 50%;
+}
+figure.curso figcaption {
+	opacity: 1;
+	position:  absolute;
+	top:  0px;
+	background-color:  rgba(0,0,0,.4);
+	color:  white;
+	width: 0%;
+	height: 0%;
+	pedding:  1px;
+	box-sizing: border-box;
+	transition: opacity 1s;                           
+}
+figure.curso:hover figcaption {
+	opacity: 1;
+}

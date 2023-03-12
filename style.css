@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body {
+	margin: 0;
+	padding: 0
+	font-family: 'poppins', sans-serif;
+	color: mediumvioletred;
+
+}
+
+/*HEADER*/
+
+.header-container {
+	height: 100vh;
+	width: 100vw;
+	background-color: aliceblue;
+	background-image: /*url('./_imagens/perfil2.png')*/;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 0 112px;
+	position: relative;	
+
+}
+.header-container-curriculo {
+	height: 280vh;
+	width: 100vw;
+	background-color: aliceblue;
+	background-image: /*url('./_imagens/perfil2.png')*/;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 0 50px;
+	position: relative;	
+
+}
+.header-container-contato {
+	height: 130vh;
+	width: 100vw;
+	background-color: aliceblue;
+	background-image: /*url('./_imagens/perfil2.png')*/;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 0 50px;
+	position: relative;	
+
+}
+article#inicio h1 { 
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+/*Conteiner onde liga o lienkeed e github*/
+
+.social-media {
+	margin-top: rem;
+	display: flex; /*para ficarem um ao lado do outro*/
+}
+
+.social-media a {
+	text-decoration: none;
+	color: black;
+	padding: 1rem 4rem;
+	border: 1px solid black;
+	min-width: 4rem;
+	display: flex;
+	align-content: center;
+	justify-content: center; /*Alinhar o texto dentro do conteiner*/
+	transition:.5s ease-in-out ;
+}
+
+a:hover {
+	background-color: lightskyblue;
+}
+
+/*MENU HAMBURGUER*/
+
+.checkbox-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkbox {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 9999; /*que a bolha não sobreponha mas que fique a frente*/
+	transition:  400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+	width: 50px;
+	height: 2px;
+	background-color: black;
+	position: absolute;
+	border-radius: 4px; /*Deixar as bordas um pouco redondas*/
+	transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+	top: 26px;
+	transform: rotate(0);
+
+}
+.checkbox .trace:nth-child(2) {
+	top: 46px;
+	transform: rotate(0);
+	
+}
+.checkbox .trace:nth-child(3) {
+	top: 66px;
+	transform: rotate(0);
+	
+}
+#toggle {
+	display: none;
+}
+
+/*MENU*/
+
+.menu {
+	position: absolute;
+	top: 28px;
+	right: 30px;
+	background-color: transparent;
+	height: 4px;
+	width: 10px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 0px white;
+	z-index: -1;
+	transition: 400ms ease-in-out 0s;
+}
+
+.menu-items {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	transition: 400ms ease-on-out 0s; /*quando o menu aparecer ele irá aparecer támbém para dar o efeito*/
+}
+
+.menu-items ul {
+	list-style-type: none;
+}
+
+.menu-items ul li a {
+	margin: 10px 0;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 40px;
+}
+
+/*ANIMAÇÃO DO MENU*/
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+	transform: rotate(45deg);
+	top: 47px;
+
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+	transform: translate(-100px);
+	width: 30px;
+	visibility: hidden;
+	opacity: 0;	
+}
+#toggle:checked + .checkbox .trace:nth-child(3) {
+	transform: rotate(-45deg);
+	top: 48px;
+}
+#toggle:checked + .checkbox {
+	background-color: white;
+}
+
+#toggle:checked ~ .menu {
+	box-shadow: 0px 0px 0px 100vmax white;
+	z-index: 1; /*Foi colocado la encima -1 e com esse 1 ele voltará ao normal*/
+}
+#toggle:checked ~ .menu-items {
+	visibility: visible;
+	opacity: 1;
+}
+
+/*CARDS*/
+
+.container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 3rem 0;
+	background-color: aliceblue;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 20%;
+	
+}
+
+.card {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin: 3rem 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: palevioletred;
+	background-image: /*url('./_imagens/livros.png')*/;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(0.5); /*Passar o mouse e ficar com a imagem um pouco mais escura*/
+	color: black;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+.card-text {
+	
+	width: 80%;
+	letter-spacing: 1px;
+	color: rgb(109, 109, 109);
+
+
+}
+.card-wrapper {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	
+
+}
+.card-wrapper::before {
+	content: '';
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: block;
+	border: 1px solid white;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+.card-wrapper h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin: 0;
+	transition: 0.5s ease-in-out;
+}
+
+.card-wrapper p {
+	font-size: 0;
+	visibility: visible;
+	opacity: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+	filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+	height: 200px;
+	width: 200px; /*o circulo aumentar e*/
+	opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+	opacity: 1;
+	visibility: visible;
+	font-size: 14px;
+}
+
+/*FOOTER*/
+
+.footer{
+	width: 100%;
+	height: 100px;
+	background-color: cornflowerblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+}
+

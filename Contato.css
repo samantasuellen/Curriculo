@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+/*CONTATO WHATS*/
+.whats {
+	position: relative;
+	bottom: 300px;
+
+}
+
+h4 {
+	font-family: "fontelogo", sans-serif;
+	font-size: 12pt;
+	color:  grey;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+article#noticia-principal-contato h2 {
+	font-size: 30pt;
+	color:  black;
+	padding: 50px 0px 150px 50px;
+	margin:  5px 900px 10px 0px;
