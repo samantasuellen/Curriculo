@@ -1,5 +1,11 @@
 # Curriculo
-Curriculo Samanta
+Foi utilizado o Visual Studio Code para a elaboração desse projeto. 
+É necessário ter algum navegador para que possa acessar o projeto.
+
+
+
+https://github.com/samantasuellen/Curriculo/assets/125299125/3b4ab065-7a88-44f4-88cc-5833837704f0
+
 
 
 Curriculo que mostra novas formas de apresentação curricular
